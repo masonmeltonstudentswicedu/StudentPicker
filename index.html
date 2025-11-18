@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla DOM</title>
+    <title>Student Picker</title>
+    <style>
+      html, body { height: 100%; margin: 0; }
+      body { min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
+      .container { text-align: center; }
+      .pick-btn { font-size: 1.5rem; font-weight: 700; padding: 0.75rem 1.25rem; background: #2563eb; color: #fff; border: none; border-radius: 8px; cursor: pointer; }
+      .name { font-size: 1.25rem; font-weight: 800; margin-top: 0.75rem; }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class="container">
+      <button class="pick-btn">Pick a Student</button>
+      <p class="name">Mason Melton</p>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
